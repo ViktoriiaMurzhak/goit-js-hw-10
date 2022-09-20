@@ -57,13 +57,13 @@ function countryMarkup(countryData) {
   <p class="country__text">${name.official}</p>
   </div>
    <ul class="country__span_list">
-  <li class="country__li">Capital:
+  <li class="country__li">&#9733 Capital:
   <span class="country__span">${capital}</span>
   </li>
-   <li class="country__li">Population:
+   <li class="country__li">&#9733 Population:
   <span class="country__span">${population}</span>
   </li>
-   <li class="country__li">Languages:
+   <li class="country__li">&#9733 Languages:
   <span class="country__span">${Object.values(languages).join(', ')}</span>
   </li>
   </ul>`;
