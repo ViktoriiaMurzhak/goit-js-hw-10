@@ -27,18 +27,19 @@ function getCountryData(event) {
         Notiflix.Notify.info(
           'Too many matches found. Please enter a more specific name.'
         );
-        return;
+        return data;
       }
       if (data.length >= 2 && data.length <= 10) {
         removeMarkup(countryEl);
+        removeMarkup(countrylist);
         countrylist.insertAdjacentHTML('beforeend', countryListMarkup(data));
         countryListMarkup(data);
-        return;
+        return data;
       } else {
         removeMarkup(countrylist);
         countryEl.insertAdjacentHTML('beforeend', countryMarkup(data));
         countryMarkup(data);
-        return;
+        return data;
       }
     })
     .catch(err => {
